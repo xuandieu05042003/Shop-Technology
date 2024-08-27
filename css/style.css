@@ -487,94 +487,117 @@ button {
     text-align: center;
     margin-left: 0px;
 }
-.about_section{
+.about_section {
     width: 100%;
-    float: left; 
     background-image: url(../images/about-bg.png);
-    height: auto;
     background-repeat: no-repeat;
     background-size: cover; 
-    padding-bottom: 60px;  
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.image_2{
-    width: 100%;
-    float: left;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+/* Image Styles */
+.image_2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image_2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text Styles */
+.col-md-6 {
+    flex: 1;
+    padding: 15px;
+}
+
 .live_text {
-    width: 100%;
-    float: left;
     font-size: 32px;
     color: #020907;
     font-weight: bold;
-    padding-top: 30px;
+    margin: 0;
+    padding-top: 15px;
 }
-.lorem_text{
-    width: 100%;
-    float: left;
+
+.lorem_text {
     font-size: 16px;
     color: #000;
-   margin-left: 0px;
+    margin: 20px 0;
 }
+
+/* Button Styles */
 .online_bt_main {
-    width: 100%;
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between buttons */
+    justify-content: center; /* Center-align buttons */
+}
+
+.online_bt, .online_bt1, .read_bt1 {
+    flex: 1;
+    min-width: 200px; /* Minimum button width */
+}
+
+.online_bt a, .online_bt1 a, .read_bt1 a {
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Button Variants */
+.online_bt a {
+    background-color: #d72a18;
+}
+
+.online_bt a:hover {
+    background-color: #c72a17;
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.online_bt1 a {
+    background-color: #000;
+}
+
+.online_bt1 a:hover {
+    background-color: #333;
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.read_bt1 {
+    text-align: center;
     margin-top: 30px;
 }
-.online_bt{
-    width: 50%;
-    float: left;
-}
-.online_bt a{
-    width: 100%;
-    float: left;
-    font-size: 22px;
-    color: #ffffff;
-    background-color: #d72a18;
-    padding: 10px 0px;
-    text-align: center;
-    font-weight: bold;
-}
-.online_bt a:hover{
-    color: #ffffff;
-    background-color: #d72a18;
-}
-.online_bt1{
-    width: 50%;
-    float: left;
-}
-.online_bt1 a{
-    width: 100%;
-    float: left;
-    font-size: 22px;
-    color: #ffffff;
-    background-color: #000;
-    padding: 10px 0px;
-    text-align: center;
-    font-weight: bold;
-}
-.online_bt1 a:hover{
-    color: #ffffff;
-    background-color: #d72a18;
-}
-.read_bt1 {
-    width: 30%;
-    float: left;
-    margin-top: 50px;
-}
+
 .read_bt1 a {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #ffffff;
     background-color: #000;
-    text-align: center;
-    padding: 10px 0px;
-    border-radius: 30px;
+    border-radius: 30px; /* More rounded for "Learn More" */
+    padding: 12px 24px; /* Larger padding */
+    font-size: 16px;
 }
-.read_bt1 a:hover{
-    color: #ffffff;
+
+.read_bt1 a:hover {
     background-color: #d72a18;
+    transform: translateY(-2px); /* Subtle lift effect */
 }
 .product_section {
     width: 100%;
